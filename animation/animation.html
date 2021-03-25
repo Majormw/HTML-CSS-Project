@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Animation</title>
+	<style type="text/css">
+		
+
+	@keyframes example{
+		from{background-color:red;}
+		to{background-color:yellow;}
+	} 
+
+	@keyframes tips{
+		0%b{background-color:cyan;left:0px;top:0px}
+		25%{background-color:purple;left:200px;top:0px}
+		50%{background-color:brown:left:200px;top:200px}
+		75%{background-color:orange;left:0px;top:200px}
+		100%{background-color:magenta;left:0px;top:0px}
+	}
+
+	#box1{
+		width:100px;
+		height:100px;
+		background-color:cyan;
+		animation-name:example;
+		animation-duration:4s;
+		position:relative;
+		animation-iteration-count:5;
+	}
+
+
+	@keyframes move{
+		0%{left:0px;top:0px}
+		50%{left:100%;top:0px}
+		100%{left:0px;top:0px}
+	}
+
+	#box2{
+		width:150px;
+		height:150px;
+		background-color:red;
+		animation-name:tips;
+		animation-duration:10s;
+		position:relative;
+		animation-iteration-count:infinite;
+	}
+
+	#box3{
+		width:150px;
+		height:150px;
+		border-radius:100%;
+		background-color:grey;
+		position:relative;
+		animation-name:move;
+		animation-duration:20s;
+		animation-iteration-count:infinite;
+	}
+
+		@keyframes nav{
+		0%{left:50%;top:-45%}
+		50%{left:50%;top:100%}
+		100%{left:50%;top:0px}
+	}
+
+	#box4{
+		width:150px;
+		height:150px;
+		border-radius:100%;
+		background-color:green;
+		position:absolute;
+		animation-name:nav;
+		animation-duration:20s;
+		animation-iteration-count:infinite;
+
+
+
+	</style>
+</head>
+<body>
+
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+		<div id="box4"></div>
+
+</body>
+</html>
